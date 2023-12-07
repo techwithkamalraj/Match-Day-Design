@@ -1,0 +1,214 @@
+*{
+    /* width: 100%; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* // Navbar */
+.navbar{
+    height: 95px;
+    background-color: #FFFFDD;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbar h1{
+    font-family: sans-serif;
+}
+/* .menu{
+    
+} */
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    font-size: 20px;
+    float: left;
+    padding: 12px 18px;
+}
+.menu ul li a{
+    text-decoration: none;
+}
+#slogin{
+    width: auto;
+    padding: 10px 25px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+#ologin{
+    width: auto;
+    padding: 10px 25px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+/* // Media Queries for Navbar */
+
+/* // Iphone SE */
+
+@media screen and (max-width: 280px), (max-width: 412px) {
+    .navbar {
+        display: block; 
+        height: 300px;
+        width: 100%;
+        text-align: center;
+        padding: 0; /* Reset padding */
+        margin: 0; /* Reset margin */
+        box-sizing: border-box; /* Include padding and border in width */
+    }
+    .menu ul li {
+        float: none;
+        padding: 12px 18px;
+        font-size: 15px;
+        box-sizing: border-box; /* Include padding and border in width */
+    }
+    #slogin,
+    #ologin {
+        padding: 6px 20px;
+        margin: 3px;
+        box-sizing: border-box; /* Include padding and border in width */
+    }
+}
+
+
+
+
+
+/* // Search Bar */
+
+.searchBar{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    background-image: url('searchbar-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#search{
+    position: relative;
+    top: 10px;
+    background-color: blue;
+    color: white;
+    padding: 8px 20px;
+    border: 1px solid blue;
+    border-radius: 10px;
+
+}
+#h{
+    color: yellow
+}
+#searchbar{
+    text-align: center;
+    width: 300px;
+    padding: 12px 0px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+/* // Searchbar Media Query */
+@media screen and (max-width: 412px) {
+    input[type="text"] {
+        padding: 6px 10px; /* Adjust padding as needed */
+        width: 100%; /* Occupy full available width */
+        max-width: 200px; /* Set a maximum width if needed */
+        box-sizing: border-box; /* Ensure padding is included in width */
+    }
+    h1{
+        text-align: center;
+    }
+}
+
+
+
+
+/* // Sports in which we invloved */
+
+#sport{
+    font-family: sans-serif;
+}
+.sports{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width:412px) {
+    .sports{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+/* // sportsmenBenefit */
+
+.sportsmenBenefit{
+    background-color: lightblue;
+    text-align: left;
+    height: 300px;
+}
+#sbene{
+    position: relative;
+    top: 15px;
+}
+li{
+    font-family: sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+/* // Media Query for Sportmen Benefit */
+
+
+
+
+/* // Organiser Benefit */
+.organizerBenefit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    background-color: lemonchiffon;
+    text-align: center;
+}
+ul{
+    position: relative;
+    top: 13px;
+}
+li{
+    font-family: sans-serif;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+
+
+
+/* //footer */
+
+.footer{
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
