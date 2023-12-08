@@ -10,27 +10,76 @@
     height: 95px;
     background-color: #FFFFDD;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 .navbar h1{
     font-family: sans-serif;
 }
-/* .menu{
-    
-} */
-.menu ul{
+.menu {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0; /* Add padding to the entire menu */
+    margin: 0;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
-.menu ul li{
+
+.menu ul li {
+    box-sizing: border-box;
     font-size: 20px;
-    float: left;
-    padding: 12px 18px;
+    margin: 0 10px; /* Add margin between list items */
 }
-.menu ul li a{
+
+.menu ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: #333; /* Set text color */
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+.menu ul li a:hover {
+    color: #007bff; /* Change text color on hover */
+}
+
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: right;
+}
+.register button a{
+    text-decoration: none;
+    color: white;
+}
+.register a{
+    position: relative;
+    top: 3px;
+    text-decoration: none;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.login a{
+    position: relative;
+    top: 3px;
     text-decoration: none;
 }
 #slogin{
+    align-items: center;
     width: auto;
     padding: 10px 25px;
     color: white;
@@ -72,6 +121,13 @@
         padding: 6px 20px;
         margin: 3px;
         box-sizing: border-box; /* Include padding and border in width */
+    }
+    .register{
+        display: block;
+
+    }
+    .login{
+        display: block;
     }
 }
 
